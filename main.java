@@ -13,8 +13,8 @@ public class WordCount {
 
         // Process each word
         for (String word : words) {
-            // Remove punctuation marks and convert to lowercase
-            word = removePunctuation(word).toLowerCase();
+            // Remove punctuation marks
+            word = removePunctuation(word);
 
             // Update word count in the map
             wordCountMap.put(word, wordCountMap.getOrDefault(word, 0) + 1);
